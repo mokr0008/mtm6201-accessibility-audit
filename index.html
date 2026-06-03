@@ -9,21 +9,21 @@
 <body>
 
 <!-- header -->
-<header class="site-header"> <!-- Changed to semantic header for screen reader landmarks -->
+<header class="site-header"> <!-- Semantic header for accessibility -->
   <div class="header-inner">
     <a href="index.html" class="logo">Brew & Gather</a>
 
-    <nav aria-label="Main navigation"> <!-- Added aria-label so screen readers know this is the main menu -->
+    <nav aria-label="Main navigation"> <!-- Distinguish nav for screen readers -->
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li> <!-- aria-current signals active page -->
+        <li><a href="index.html" aria-current="page">Home</a></li> <!-- Active page indicated -->
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about.html">Our Story</a></li>
         <li><a href="contact.html">Visit Us</a></li>
       </ul>
     </nav>
 
-    <button class="menu-toggle" aria-label="Toggle menu"> <!-- Added accessible label to mobile menu button -->
-      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <!-- Icon is decorative, hidden from screen readers -->
+    <button class="menu-toggle" aria-label="Toggle menu"> <!-- Accessible label for button -->
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <!-- Icon hidden from screen readers -->
         <line x1="3" y1="6" x2="21" y2="6"/>
         <line x1="3" y1="12" x2="21" y2="12"/>
         <line x1="3" y1="18" x2="21" y2="18"/>
@@ -32,27 +32,26 @@
   </div>
 </header>
 
-<!-- main -->
-<main> <!-- Added semantic main element -->
+<!-- main content -->
+<main>
   <div class="hero">
     <div class="hero-content">
       <h1>A place to slow down.</h1>
       <p>Specialty coffee, fresh pastries, and a warm corner of the city that feels like yours.</p>
       <a href="/menu.html" class="btn">See our menu</a>
     </div>
-    
-    <img src="images/hero.png" class="hero-image" alt="Coffee cup on a table in cozy cafe"> <!-- Added descriptive alt text -->
+    <img src="images/hero.png" class="hero-image" alt="Coffee cup on a table in cozy cafe"> <!-- Descriptive alt added -->
   </div>
 
   <div class="section">
     <div class="container">
-      <h4>What we offer</h4>
+      <h2>What we offer</h2> <!-- Changed to h2 for sequential headings -->
       <div class="cards">
 
         <div class="card">
           <h4>Specialty Coffee</h4>
-          <p>Single-origin beans sourced from small farms, roasted in small batches to bring out the best of every cup.</p>    
-          <a href="/menu.html" aria-label="Read more about Specialty Coffee">Read more</a> <!-- Added descriptive aria-label -->
+          <p>Single-origin beans sourced from small farms, roasted in small batches to bring out the best of every cup.</p>
+          <a href="/menu.html" aria-label="Read more about Specialty Coffee">Read more</a>
         </div>
 
         <div class="card">
@@ -74,9 +73,9 @@
   <div class="section section--warm">
     <div class="container two-col">
 
-      <img src="images/interior.png" class="interior-photo" alt="Interior of Brew & Gather with seating and warm lighting"> <!-- Added descriptive alt -->
+      <img src="images/interior.png" class="interior-photo" alt="Interior of Brew & Gather with seating and warm lighting">
       <div class="story-text">
-        <h4>Our story</h4>
+        <h2>Our story</h2> <!-- h2 for sequential heading -->
         <p>Brew &amp; Gather started in 2019 as a small pop-up in the Glebe neighbourhood of Ottawa. We wanted to create a space that felt less like a transaction and more like a ritual — a reason to pause, connect, and be present.</p>
         <p>Today we're at the corner of Bank and Clemow, open seven days a week. Come find your corner.</p>
         <a href="/about.html" aria-label="Read more about Our Story">Read more</a>
@@ -95,9 +94,8 @@
         </div>
         <div>
           <h4>Send us a message</h4>
-          
           <form class="contact-form">
-            <label for="name">Your name</label> <!-- Added label for screen readers -->
+            <label for="name">Your name</label>
             <input type="text" id="name" placeholder="Your name">
 
             <label for="email">Your email</label>
@@ -106,7 +104,7 @@
             <label for="message">Your message</label>
             <textarea id="message" placeholder="Your message" rows="4"></textarea>
 
-            <button type="submit" class="btn-submit">Send message</button> <!-- Changed from div to button for semantic submit -->
+            <button type="submit" class="btn-submit">Send message</button>
           </form>
         </div>
       </div>
@@ -115,10 +113,10 @@
 </main>
 
 <!-- footer -->
-<footer class="site-footer"> <!-- Changed div to footer for semantic landmark -->
+<footer class="site-footer">
   <div class="footer-inner">
     <p class="footer-tagline">Brew &amp; Gather Coffee Co. &mdash; Ottawa, ON</p>
-    <nav aria-label="Footer navigation"> <!-- Added aria-label to distinguish footer nav -->
+    <nav aria-label="Footer navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
